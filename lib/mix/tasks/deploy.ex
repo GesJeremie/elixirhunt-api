@@ -4,7 +4,7 @@ defmodule Mix.Tasks.Deploy do
   def run(_args) do
     
     show("Building release ...")
-    Mix.Task.run("edeliver", ["build release --branch=production --verbose"])
+    Mix.Task.run("edeliver", ["build release --branch=master --verbose"])
 
     show("Deploy to production ...")
     Mix.Task.reenable("edeliver")
