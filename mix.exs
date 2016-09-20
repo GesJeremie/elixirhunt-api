@@ -20,7 +20,8 @@ defmodule Api.Mixfile do
   def application do
     [mod: {Elixirhunt, []},
      applications: [:phoenix, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :httpoison, :edeliver]]
+                    :phoenix_ecto, :postgrex, :httpoison, :edeliver,
+                    :faker_elixir_octopus]]
   end
 
   # Specifies which paths to compile per environment.
@@ -52,7 +53,8 @@ defmodule Api.Mixfile do
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
     ["ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
-     "ecto.reset": ["ecto.drop", "ecto.setup"]
+     "ecto.reset": ["ecto.drop", "ecto.setup"],
+     "seed": ["run priv/repo/seeds.exs"]
     ]
   end
 end

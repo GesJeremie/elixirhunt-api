@@ -2,7 +2,10 @@
              [{registered,[]},
               {description,"elixirhunt"},
               {vsn,"0.0.1"},
-              {modules,['Elixir.Elixirhunt','Elixir.Elixirhunt.ChangesetView',
+              {modules,['Elixir.Elixirhunt',
+                        'Elixir.Elixirhunt.Admin.SessionController',
+                        'Elixir.Elixirhunt.Admin.SessionView',
+                        'Elixir.Elixirhunt.ChangesetView',
                         'Elixir.Elixirhunt.Endpoint',
                         'Elixir.Elixirhunt.ErrorHelpers',
                         'Elixir.Elixirhunt.ErrorView',
@@ -16,5 +19,5 @@
                         'Elixir.Elixirhunt.Web','Elixir.Mix.Tasks.Deploy']},
               {mod,{'Elixir.Elixirhunt',[]}},
               {applications,[kernel,stdlib,elixir,phoenix,cowboy,logger,
-                             gettext,phoenix_ecto,postgrex,httpoison,
-                             edeliver]}]}.
+                             gettext,phoenix_ecto,postgrex,httpoison,edeliver,
+                             faker_elixir_octopus]}]}.
