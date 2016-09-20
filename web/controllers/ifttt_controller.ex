@@ -6,7 +6,7 @@ defmodule Elixirhunt.IftttController do
   """
   def maker(conn, params = %{"event" => event}) do
     
-    key = Application.get_env(:api, :ifttt_key)
+    key = Application.get_env(:elixirhunt, :ifttt_key)
 
     request = "https://maker.ifttt.com/trigger/#{event}/with/key/#{key}"
 
