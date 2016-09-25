@@ -1,0 +1,23 @@
+# .deliver/config
+
+APP="elixirhunt"
+
+BUILD_HOST=""
+BUILD_USER=""
+BUILD_AT="/tmp/edeliver/elixirhunt/builds"
+
+PRODUCTION_HOSTS=""
+PRODUCTION_USER=""
+DELIVER_TO="/var/www/elixirhunt.prod/api"
+
+AUTO_VERSION=commit-count+git-revision+branch-unless-master
+
+# For *Phoenix* projects, symlink prod.secret.exs to our tmp source
+pre_erlang_get_and_update_deps() {
+  local _prod_secret_path="/path-remote-server/prod.secret.exs"
+  if [ "$TARGET_MIX_ENV" = "prod" ]; then
+    __sync_remote "
+      ln -sfn '$_prod_secret_path' '$BUILD_AT/config/prod.secret.exs'
+    "
+  fi
+}
