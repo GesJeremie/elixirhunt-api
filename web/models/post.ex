@@ -12,7 +12,7 @@ defmodule Elixirhunt.Post do
     timestamps
   end
 
-  @required_fields ~w(title company location content logo url)
+  @required_fields ~w(title location content url)
   @optional_fields ~w()
 
   @doc """
