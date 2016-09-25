@@ -28,6 +28,6 @@ defmodule Elixirhunt.Post do
 
   def sort_by_recent(query) do
     from post in query,
-      order_by: post.inserted_at
+      order_by: [desc: post.inserted_at]
   end
 end
