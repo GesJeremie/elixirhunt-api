@@ -6,7 +6,11 @@ defmodule Elixirhunt.PostController do
   plug :scrub_params, "post" when action in [:create, :update]
 
   def index(conn, _params) do
-    posts = Repo.all(Post)
+    posts = 
+      Post
+      |> Post.sort_by_recent
+      |> Repo.all
+    
     render(conn, "index.json", posts: posts)
   end
 

@@ -25,4 +25,9 @@ defmodule Elixirhunt.Post do
     model
     |> cast(params, @required_fields, @optional_fields)
   end
+
+  def sort_by_recent(query) do
+    from post in query,
+      order_by: post.inserted_at
+  end
 end
