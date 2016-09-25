@@ -16,6 +16,9 @@ defmodule Elixirhunt.PostView do
       location: post.location,
       content: post.content,
       logo: post.logo,
-      url: post.url}
+      url: post.url,
+      created_at: post.inserted_at,
+      updated_at: post.updated_at
+  }
   end
 end

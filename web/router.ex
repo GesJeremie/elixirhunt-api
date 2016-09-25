@@ -17,7 +17,7 @@ defmodule Elixirhunt.Router do
     scope "/admin", Admin do
       get "/session/show", SessionController, :show
       get "/session/revoke", SessionController, :revoke
-      get "/session/create", SessionController, :create
+      post "/session/create", SessionController, :create
     end
   end
 end
