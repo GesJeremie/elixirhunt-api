@@ -38,9 +38,9 @@ defmodule Elixirhunt.PostController do
   def update(conn, %{"id" => id, "post" => post_params}) do
     post = Repo.get!(Post, id)
     changeset = Post.changeset(post, post_params)
-
     case Repo.update(changeset) do
       {:ok, post} ->
+        IO.inspect post
         render(conn, "show.json", post: post)
       {:error, changeset} ->
         conn

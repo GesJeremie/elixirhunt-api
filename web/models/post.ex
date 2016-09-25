@@ -13,7 +13,7 @@ defmodule Elixirhunt.Post do
   end
 
   @required_fields ~w(title location content url)
-  @optional_fields ~w()
+  @optional_fields ~w(company logo)
 
   @doc """
   Creates a changeset based on the `model` and `params`.
