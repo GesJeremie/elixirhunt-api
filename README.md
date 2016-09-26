@@ -1,19 +1,16 @@
-# Api
+# :hamster: Elixirhunt
 
-To start your Phoenix app:
+[![Website](https://dl.dropboxusercontent.com/u/58469525/stackoverflow/github/elixirhunt_desktop.png)](http://www.elixirhunt.com/)
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Start Phoenix endpoint with `mix phoenix.server`
+## About
+We hunt for Elixir Jobs ... so you don't have to!
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## Description
+It's the repo for the back-end application.
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+## Community
+Join us on twitter: https://twitter.com/elixirhunt
 
-## Learn more
+## Powered By
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: http://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+<img src="http://nyc.phoenix.camp/images/logo.png" width="200"/>
