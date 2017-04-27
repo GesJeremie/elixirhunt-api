@@ -1,6 +1,6 @@
 # :droplet: Elixirhunt
 
-[![Website](https://dl.dropboxusercontent.com/u/58469525/stackoverflow/github/elixirhunt_desktop.png)](http://www.elixirhunt.com/)
+[![Website](https://s2.postimg.org/ubc6kb889/elixirhunt_desktop.png)](http://www.elixirhunt.com/)
 
 ## About
 We hunt for Elixir Jobs ... so you don't have to!
@@ -13,4 +13,4 @@ Join us on twitter: https://twitter.com/elixirhunt
 
 ## Powered By
 
-<img src="http://nyc.phoenix.camp/images/logo.png" width="200"/>
+<img src="https://s24.postimg.org/urf058f4l/-s9uo_LIN.png" width="200"/>
