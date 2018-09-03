@@ -1,3 +1,5 @@
+> :skull: This project has been archived.
+
 # :droplet: Elixirhunt
 
 [![Website](https://s2.postimg.org/ubc6kb889/elixirhunt_desktop.png)](http://www.elixirhunt.com/)
